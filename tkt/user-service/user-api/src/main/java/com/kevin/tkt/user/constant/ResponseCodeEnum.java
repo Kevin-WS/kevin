@@ -1,4 +1,4 @@
-package com.kevin.tkt.user.constants;
+package com.kevin.tkt.user.constant;
 
 /**
  * Author: Wu Shuai

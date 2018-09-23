@@ -24,4 +24,11 @@ public abstract class AbstractRequest implements Serializable {
     public void setRequestBaseData(RequestBaseData requestBaseData) {
         this.requestBaseData = requestBaseData;
     }
+
+    @Override
+    public String toString() {
+        return "AbstractRequest{" +
+                "requestBaseData=" + requestBaseData +
+                '}';
+    }
 }

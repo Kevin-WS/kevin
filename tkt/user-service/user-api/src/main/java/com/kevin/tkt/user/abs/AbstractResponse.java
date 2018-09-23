@@ -25,4 +25,11 @@ public abstract class AbstractResponse implements Serializable {
     public void setResponseBaseData(ResponseBaseData responseBaseData) {
         this.responseBaseData = responseBaseData;
     }
+
+    @Override
+    public String toString() {
+        return "AbstractResponse{" +
+                "responseBaseData=" + responseBaseData +
+                '}';
+    }
 }

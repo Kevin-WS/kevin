@@ -10,5 +10,10 @@ import com.kevin.tkt.user.dto.UserLoginResponse;
  **/
 public interface IUserCoreService {
 
+    /**
+     * 用户登录
+     * @param request
+     * @return
+     */
     UserLoginResponse login(UserLoginRequest request);
 }

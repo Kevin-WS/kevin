@@ -36,4 +36,12 @@ public class RequestBaseData implements Serializable {
     public void setExtParameters(List<ExtensionParameter> extParameters) {
         this.extParameters = extParameters;
     }
+
+    @Override
+    public String toString() {
+        return "RequestBaseData{" +
+                "dataOperator='" + dataOperator + '\'' +
+                ", extParameters=" + extParameters +
+                '}';
+    }
 }

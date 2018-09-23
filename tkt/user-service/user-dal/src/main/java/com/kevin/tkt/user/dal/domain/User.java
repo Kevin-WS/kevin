@@ -1,6 +1,10 @@
-package com.kevin.tkt.user.dal.model;
+package com.kevin.tkt.user.dal.domain;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.util.Date;
 
 public class User {
     /**
@@ -19,6 +23,18 @@ public class User {
      * 密码
      */
     private String password;
+
+    /**
+     * 创建时间
+     */
+    @Column(name = "gmt_create")
+    private Date gmtCreate;
+
+    /**
+     * 修改时间
+     */
+    @Column(name = "gmt_modified")
+    private Date gmtModified;
 
     /**
      * 获取ID
@@ -74,12 +90,50 @@ public class User {
         this.password = password == null ? null : password.trim();
     }
 
+    /**
+     * 获取创建时间
+     *
+     * @return gmt_create - 创建时间
+     */
+    public Date getGmtCreate() {
+        return gmtCreate;
+    }
+
+    /**
+     * 设置创建时间
+     *
+     * @param gmtCreate 创建时间
+     */
+    public void setGmtCreate(Date gmtCreate) {
+        this.gmtCreate = gmtCreate;
+    }
+
+    /**
+     * 获取修改时间
+     *
+     * @return gmt_modified - 修改时间
+     */
+    public Date getGmtModified() {
+        return gmtModified;
+    }
+
+    /**
+     * 设置修改时间
+     *
+     * @param gmtModified 修改时间
+     */
+    public void setGmtModified(Date gmtModified) {
+        this.gmtModified = gmtModified;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtModified=" + gmtModified +
                 '}';
     }
 }

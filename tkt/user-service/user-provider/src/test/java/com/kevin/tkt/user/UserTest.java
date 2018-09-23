@@ -2,8 +2,8 @@ package com.kevin.tkt.user;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.kevin.tkt.user.dal.domain.User;
 import com.kevin.tkt.user.dal.mapper.UserMapper;
-import com.kevin.tkt.user.dal.model.User;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.List;
  * @author: Kevin
  * @create: 2018-09-22 18:53
  **/
-public class UserTest extends BaseTest {
+public class UserTest extends AbstractTest {
 
     @Autowired
     private UserMapper userMapper;

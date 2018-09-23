@@ -1,7 +1,7 @@
 package com.kevin.tkt.user.exception;
 
 
-import com.kevin.tkt.user.constants.ResponseCodeEnum;
+import com.kevin.tkt.user.constant.ResponseCodeEnum;
 
 /**
  * Create by qingyin@wacai.com

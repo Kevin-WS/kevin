@@ -35,4 +35,12 @@ public class UserLoginResponse extends AbstractResponse {
     public void setToken(String token) {
         this.token = token;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "UserLoginResponse{" +
+                "uid=" + uid +
+                ", token='" + token + '\'' +
+                '}';
+    }
 }

@@ -1,10 +1,10 @@
 
-package com.kevin.tkt.user.utils;
+package com.kevin.tkt.user.util;
 
 
 import com.alibaba.dubbo.common.logger.Logger;
 import com.alibaba.dubbo.common.logger.LoggerFactory;
-import com.kevin.tkt.user.constants.ResponseCodeEnum;
+import com.kevin.tkt.user.constant.ResponseCodeEnum;
 import com.kevin.tkt.user.exception.ServiceException;
 import com.kevin.tkt.user.exception.ValidateException;
 

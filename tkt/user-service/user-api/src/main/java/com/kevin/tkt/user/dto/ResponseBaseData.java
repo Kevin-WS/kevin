@@ -12,6 +12,11 @@ public class ResponseBaseData implements Serializable {
     private static final long serialVersionUID = 8223322848390202220L;
 
     /**
+     * 是否成功
+     */
+    private Boolean success;
+
+    /**
      * 响应code
      */
     private String code;
@@ -35,5 +40,22 @@ public class ResponseBaseData implements Serializable {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    public Boolean getSuccess() {
+        return success;
+    }
+
+    public void setSuccess(Boolean success) {
+        this.success = success;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "ResponseBaseData{" +
+                "success=" + success +
+                ", code='" + code + '\'' +
+                ", msg='" + msg + '\'' +
+                '}';
     }
 }

@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.kevin.tkt.sso</groupId>
+	<groupId>com.kevin.tkt</groupId>
 	<artifactId>tkt-sso</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -72,7 +72,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.kevin.tkt.user</groupId>
+			<groupId>com.kevin.tkt</groupId>
 			<artifactId>user-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

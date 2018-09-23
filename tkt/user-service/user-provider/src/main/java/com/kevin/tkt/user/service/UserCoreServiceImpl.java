@@ -5,6 +5,8 @@ import com.kevin.tkt.user.IUserCoreService;
 import com.kevin.tkt.user.dto.ResponseBaseData;
 import com.kevin.tkt.user.dto.UserLoginRequest;
 import com.kevin.tkt.user.dto.UserLoginResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
@@ -15,6 +17,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Service
 public class UserCoreServiceImpl implements IUserCoreService {
+
+    private static final Logger logger = LoggerFactory.getLogger(UserCoreServiceImpl.class);
 
     @Override
     public UserLoginResponse login(UserLoginRequest request) {

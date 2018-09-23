@@ -12,4 +12,4 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = ServiceApplication.class)
 //@Transactional
 //@Rollback
-public abstract class BaseTest {}
+public abstract class AbstractTest {}
